@@ -24,7 +24,7 @@ namespace MultiplayerTest.Scripts.EntitiesFeature.Player
                 return;
             }
 
-            _movement = new HostMoving(_characterController, _playerConfig.MovingSpeed);
+            _movement = new PlayerMoving(_characterController, _playerConfig.MovingSpeed);
             _rotation = new PlayerRotate(transform, _cameraPivot, _playerConfig.Sensitivity);
             _health.Value = _playerConfig.InitialHealth;
         }

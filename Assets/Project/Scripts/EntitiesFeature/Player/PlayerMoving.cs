@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace MultiplayerTest.Scripts.EntitiesFeature.Player
 {
-    public class HostMoving : IEntityMovement
+    public class PlayerMoving : IEntityMovement
     {
         private float _speed;
         private Vector3 _direction;
         private CharacterController _characterController;
 
-        public HostMoving(CharacterController characterController, float speed)
+        public PlayerMoving(CharacterController characterController, float speed)
         {
             _characterController = characterController;
             _speed = speed;
